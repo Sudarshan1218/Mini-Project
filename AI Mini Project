@@ -1,0 +1,83 @@
+# Student Information & Guidance Expert System
+# Rule-Based AI Mini Project
+
+print("==========================================")
+print(" STUDENT INFORMATION & GUIDANCE SYSTEM")
+print("==========================================")
+
+name = input("Enter Student Name: ")
+
+print("\nSelect Area of Interest:")
+print("1. Data Analytics")
+print("2. AI / Machine Learning")
+print("3. Web Development")
+print("4. Cybersecurity")
+print("5. Software Development")
+
+choice = input("Enter choice: ")
+
+print("\nSelect Skill Level:")
+print("1. Beginner")
+print("2. Intermediate")
+print("3. Advanced")
+
+skill = input("Enter choice: ")
+
+print("\nSelect Requirement:")
+print("1. Skill Development")
+print("2. Internship Preparation")
+print("3. Project Development")
+
+requirement = input("Enter choice: ")
+
+
+# -------- Expert System Rules --------
+
+if choice == "1":
+    field = "Data Analytics"
+    skills = "Python, SQL, Statistics, Power BI"
+    roadmap = "Learn Python -> SQL -> Statistics -> Power BI"
+
+elif choice == "2":
+    field = "AI / Machine Learning"
+    skills = "Python, NumPy, Pandas, Machine Learning"
+    roadmap = "Learn Python -> Pandas -> Statistics -> ML"
+
+elif choice == "3":
+    field = "Web Development"
+    skills = "HTML, CSS, JavaScript, Web Framework"
+    roadmap = "Learn HTML -> CSS -> JavaScript -> Framework"
+
+elif choice == "4":
+    field = "Cybersecurity"
+    skills = "Networking, Linux, Python, Cybersecurity"
+    roadmap = "Learn Networking -> Linux -> Python -> Security"
+
+else:
+    field = "Software Development"
+    skills = "Python/C++, DSA, SQL, Git & GitHub"
+    roadmap = "Programming -> DSA -> SQL -> Git & GitHub"
+
+
+# Skill Level Rule
+
+if skill == "1":
+    level = "Start with basic concepts and daily practice."
+
+elif skill == "2":
+    level = "Work on practical projects and problem solving."
+
+else:
+    level = "Build advanced projects and real-world applications."
+
+
+# Requirement Rule
+
+if requirement == "1":
+    advice = "Focus on learning fundamentals and developing technical skills."
+
+elif requirement == "2":
+    advice = "Prepare your resume, GitHub profile and technical interview skills."
+
+else:
+    advice = "Choose a real-world problem and develop a practical project."
